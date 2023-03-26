@@ -57,6 +57,7 @@ img{
 
 .hero{
     margin: 2em 0;
+    padding: 3em 0;
 }
 
 
@@ -239,9 +240,6 @@ nav{
         padding: .5rem 1rem;
     }
     
-    .hero{
-        padding: 3em 0;
-    }
 
     .hero-area{
         box-shadow:  -4px 0  var(--bgc-light);
