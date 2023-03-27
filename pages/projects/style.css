@@ -45,10 +45,17 @@ h1, ul{
 }
 
 .container-2{
-    width: 70%;
+    width: 88%;
     margin: 0 auto;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ----------------------- */
 .nav-logo span{
     font-family: var(--font-logo);
     font-size: 2rem;
@@ -133,9 +140,38 @@ nav{
     background-color: #cede8f;
 }
 
+/* ------------Project containers---------------- */
+.project-title{
+    color: var(--text-clr-light);
+}
 
+.item{
+    border: 1px solid var(--bgc-light);
+    box-shadow:  -4px 0  var(--bgc-light);
+    padding: 2em;
+    transition: all .3s ease-out;
+    padding: 20px;
+}
+.item:hover {
+    border: 1px solid var(--highlighter);
+    box-shadow:  -3px 3px  var(--highlighter);
+    transform: translate(5px, -5px);
+}
+
+.featured, 
+.apps, 
+.responsive {
+    margin: 2.5rem 0;
+}
+
+/* ------------Media Queries---------------------  */
 
 @media (min-width:800px) {
+    .grid{
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+    }
+
+
     .row{
         display: flex;
         justify-content: space-between;
