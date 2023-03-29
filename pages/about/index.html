@@ -1,47 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Silkscreen&family=Ubuntu:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container-1 row">
-          <div class="nav-logo"><span>RS</span></div>
-          <div>
-            <ul class="nav-list">
-              <li><a href="../../index.html" class="nav-item">Home</a></li>
-              <li><a href="../projects/index.html" class="nav-item">My Works</a></li>
-              <li><a href="../contact/index.html" class="nav-item">Contact</a></li>
-              <li><button class="btn btn-resume"><a href="#" class="nav-item">Resume</a></button></li>
+      <div class="container-1 row">
+        <div class="nav-logo"><span>RS</span></div>
+        <div>
+          <ul class="nav-list">
+            <li><a href="../../index.html" class="nav-item">Home</a></li>
+            <li>
+              <a href="../projects/index.html" class="nav-item">My Works</a>
+            </li>
+            <li>
+              <a href="../contact/index.html" class="nav-item">Contact</a>
+            </li>
+            <li>
+              <button class="btn btn-resume">
+                <a href="#" class="nav-item">Resume</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="toggle-button">
+          <div class="toggle-bar"></div>
+          <div class="toggle-bar"></div>
+          <div class="toggle-bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="hero">
+      <div class="container-2">
+        <div class="floating-btn">
+          <a href="#skills">Jump to skills</a>
+        </div>
+        <div class="aboutMe-container">
+          <div class="aboutMe-foreground">
+            <h1 class="hero-text">About Me</h1>
+          <p class="hero-content">
+          Hello! My name is Shantanu. I enjoy creating things that come to life
+          on the vast canvas of the internet. Although I'm fairly new in this
+          field, but my journey into web development actually started way back
+          when I was a kid. I still remember the first time I was introduced
+          to web development. It was when I made a website for my school by
+          editing HTML and CSS of a template I downloaded from some website. Ah,
+          those were the days! 
+          <br>
+          Fast forward to the present, and I'm at it again
+          — programming and building things. My path to get here was a bit
+          winding. I actually studied electrical engineering, but then the pandemic hit in my final year, and like many
+          others, I found myself at a crossroads. It was during this time that I
+          rediscovered my love for programming and building things — just with one tool at my disposal — a laptop! And so, I
+          decided to take the plunge and pursue web development as a full-time
+          career. It's been a wild ride so far, and I'm excited to see where
+          this journey takes me.
+          </p>
+          <p class="hero-content">But enough about me, let's talk about what I
+            can do for you! Although I'm fairly new in this field, here are some of the skills I've acquired while working on different projects.
+          </p>  
+          </div>
+          
+        </div>
+        <div id="skills">
+          <div class="technologies-container">
+            <ul class="technologies-list">
+              <h5>Languages</h5>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>C</li>
+            </ul>
+            <ul class="technologies-list">
+              <h5>Frameworks / Libs / DBs</h5>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>Firebase</li>
             </ul>
           </div>
-          <div class="toggle-button">
-            <div class="toggle-bar"></div>
-            <div class="toggle-bar"></div>
-            <div class="toggle-bar"></div>
+          
+          <h4>Other technologies:</h4>
+          <div class="technologies-container"> 
+            <ul class="technologies-list">
+              <h5>Other Tools</h5>
+              <li>Git / Github</li>
+              <li>npm</li>
+              <li>VS code</li>
+              <li>Figma</li>
+              <li>Framer</li>
+              <li>Mui</li>
+              <li>Redux / Toolkit</li>
+            </ul>
+            <ul class="technologies-list">
+              <h5>CSS: Frameworks / Libs</h5>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+              <li>Bulma</li>
+              <li>Daisy UI</li>
+            </ul>
           </div>
-        </div>
-      </nav>
+          </div>
+      </div>
+    </section>
 
-      <section id="about" class="hero">
-        <div class="aboutme-container container-2">
-          <h1>about me!</h1>
-        </div>
-      </section>
-
-      <!-- --------------SCRIPTS-----------  -->
-      <script src="../../app.js"></script>
-      <script src="app.js"></script>
-</body>
+    <!-- --------------SCRIPTS-----------  -->
+    <script src="../../app.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

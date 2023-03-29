@@ -1,7 +1,99 @@
+.container-2 {
+  width: 90%;
+}
+
+.hero-content {
+  margin: 1.2rem 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.aboutMe-container {
+  width: 100%;
+  padding: 2rem 1rem 2rem 0.5rem;
+
+  position: relative;
+  margin-bottom: 2rem;
+  background-image: url('../../assets/images/profile.webp');
+  background-size: cover;
+  background-repeat: none;
+  z-index: -2;
+}
+
+.aboutMe-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(216, 233, 155, 0.15);
+}
+
+.aboutMe-foreground {
+  padding: 2rem;
+  z-index: 1;
+  background-color: rgba(44, 30, 66, 0.8);
+  /* backdrop-filter: blur(1px); */
+}
+
+.hero-content {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.technologies-container {
+  display: flex;
+  gap: 25px;
+  margin: 1rem 0;
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.technologies-list li::before {
+  content: '\2192'; /* Unicode code for right arrow symbol */
+  margin-right: 0.5em;
+  color: var(--highlighter);
+}
+
+.technologies-list li {
+  transition: transform 0.2s ease-out;
+}
+.technologies-list li:hover {
+  transform: translate(4px, 0);
+}
 
 
+.floating-btn {
+    font-family: var(--font-hlg);
+    /* font-size: .8rem; */
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    right: 5%;
+    background-color: var(--highlighter);
+    padding: .4rem;
+}
 
-@media (min-width:800px) {
+@media (min-width: 800px) {
+  .container-2 {
+    width: 70%;
+  }
 
-
+  .technologies-container {
+    gap: 100px;
+  }
 }
