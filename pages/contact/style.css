@@ -1,6 +1,67 @@
-
-
-@media (min-width:800px) {
-
-
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+  
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    color: var(--text-clr-light);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 2px solid var(--bgc-lighter);
+    font-size: 16px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--highlighter);
+    outline: none;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    align-self: flex-start;
+    background-color: inherit;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid var(--highlighter);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--highlighter);
+    color: black;
+  }
+  
+
+/* @media (min-width:800px) {
+
+
+} */
