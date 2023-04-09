@@ -8,7 +8,7 @@
 
 h4 {
   font-size: 1.2rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0 .5rem 0;
 }
 
 h5 {
@@ -49,6 +49,7 @@ h5 {
 .hero-content {
   line-height: 1.5rem;
   font-size: 1.1rem;
+  color: var(--text-clr-light);
 }
 
 .technologies-container {
@@ -79,7 +80,7 @@ h5 {
 
 .floating-btn {
     font-family: var(--font-hlg);
-    /* font-size: .8rem; */
+    border-radius: 0 10px 10px 0;
     font-weight: 600;
     color: black;
     position: absolute;

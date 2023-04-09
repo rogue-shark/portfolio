@@ -27,8 +27,9 @@ h1{
   
   .form-group input,
   .form-group textarea {
+    background-color: #f4f4f4;
     padding: 10px;
-    border: 2px solid var(--bgc-lighter);
+    border-right: 5px solid var(--bgc-lighter);
     font-size: 16px;
   }
   
