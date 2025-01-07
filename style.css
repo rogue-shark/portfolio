@@ -186,22 +186,25 @@ nav {
 }
 
 .nav-list {
-  display: none;
-  height: 100vh;
-  color: white;
-  transition: display 0.3s ease-out;
+  overflow: hidden; /* Ensure no content spills out */
+  height: 0; /* Start fully collapsed */
+  opacity: 0; /* Fully transparent */
+  transform: translateY(-10px); /* Slight upward shift */
+  transition: height 0.25s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
+  text-align: center;
 }
 
 .nav-list li {
-  margin: 2em 0;
+  margin: 4em 0;
+  align-self: center;
 }
 
 .nav-item {
-  display: block;
   color: white;
   letter-spacing: 1.5px;
   transition: border-bottom 0.3s ease-out;
   border-bottom: 3px solid var(--bgc-light);
+  padding-bottom: 5px;
 }
 
 .btn-resume .nav-item {
@@ -209,16 +212,18 @@ nav {
   font-weight: 600;
   border-bottom: 3px solid var(--highlighter);
 }
+.btn-resume .nav-item:hover {
+  border-bottom: 3px solid var(--bgc-dark);
+}
 
 .nav-item:hover {
   border-bottom: 3px solid var(--highlighter);
 }
 
 .nav-list.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100vh; /* Adjust to the maximum height of your menu */
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
 }
 
 .btn-resume {
@@ -237,16 +242,19 @@ nav {
     gap: 40px;
   }
   nav {
-    padding: 0;
+    padding: 1.5rem;
   }
   .toggle-button {
     display: none;
   }
 
   .nav-list {
-    display: flex;
-    align-items: center;
-    height: 100%;
+    display: flex; /* Ensure the menu is always visible on larger screens */
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    overflow: visible;
+    transition: none; /* Disable animation for desktop */
   }
 
   .nav-item {
